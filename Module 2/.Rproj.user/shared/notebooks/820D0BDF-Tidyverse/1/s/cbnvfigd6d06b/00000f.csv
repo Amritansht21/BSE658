@@ -1,0 +1,1046 @@
+"0","install.packages(""tidyverse"")"
+"2","WARNING: Rtools is required to build R packages but no version of Rtools compatible with the currently running version of R was found. Note that the following incompatible version(s) of Rtools were found:
+
+  - Rtools 4.2 (installed at C:\RBuildTools\4.2)
+
+Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+"
+"2","Installing package into ‘C:/Users/amrit/AppData/Local/R/win-library/4.4’
+(as ‘lib’ is unspecified)
+"
+"2","also installing the dependencies ‘fastmap’, ‘colorspace’, ‘sys’, ‘bit’, ‘ps’, ‘base64enc’, ‘sass’, ‘digest’, ‘cachem’, ‘farver’, ‘labeling’, ‘munsell’, ‘RColorBrewer’, ‘viridisLite’, ‘rappdirs’, ‘rematch’, ‘askpass’, ‘bit64’, ‘prettyunits’, ‘processx’, ‘evaluate’, ‘highr’, ‘xfun’, ‘yaml’, ‘bslib’, ‘fontawesome’, ‘htmltools’, ‘jquerylib’, ‘tinytex’, ‘backports’, ‘generics’, ‘glue’, ‘lifecycle’, ‘memoise’, ‘blob’, ‘DBI’, ‘R6’, ‘tidyselect’, ‘vctrs’, ‘withr’, ‘data.table’, ‘gtable’, ‘isoband’, ‘scales’, ‘gargle’, ‘uuid’, ‘cellranger’, ‘curl’, ‘ids’, ‘rematch2’, ‘cpp11’, ‘pkgconfig’, ‘mime’, ‘openssl’, ‘timechange’, ‘fansi’, ‘utf8’, ‘systemfonts’, ‘textshaping’, ‘clipr’, ‘crayon’, ‘vroom’, ‘tzdb’, ‘progress’, ‘callr’, ‘fs’, ‘knitr’, ‘rmarkdown’, ‘selectr’, ‘stringi’, ‘broom’, ‘conflicted’, ‘cli’, ‘dbplyr’, ‘dplyr’, ‘dtplyr’, ‘forcats’, ‘ggplot2’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘hms’, ‘httr’, ‘jsonlite’, ‘lubridate’, ‘magrittr’, ‘modelr’, ‘pillar’, ‘purrr’, ‘ragg’, ‘readr’, ‘readxl’, ‘reprex’, ‘rlang’, ‘rstudioapi’, ‘rvest’, ‘stringr’, ‘tibble’, ‘tidyr’, ‘xml2’
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/fastmap_1.2.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 135365 bytes (132 KB)
+"
+"2","downloaded 132 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/colorspace_2.1-1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 2665597 bytes (2.5 MB)
+"
+"2","downloaded 2.5 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/sys_3.4.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 47898 bytes (46 KB)
+"
+"2","downloaded 46 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/bit_4.0.5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1148606 bytes (1.1 MB)
+"
+"2","downloaded 1.1 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/ps_1.7.7.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 557784 bytes (544 KB)
+"
+"2","downloaded 544 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/base64enc_0.1-3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 33130 bytes (32 KB)
+"
+"2","downloaded 32 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/sass_0.4.9.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 2613570 bytes (2.5 MB)
+"
+"2","downloaded 2.5 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/digest_0.6.36.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 221462 bytes (216 KB)
+"
+"2","downloaded 216 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/cachem_1.1.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 73872 bytes (72 KB)
+"
+"2","downloaded 72 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/farver_2.1.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1519669 bytes (1.4 MB)
+"
+"2","downloaded 1.4 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/labeling_0.4.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 63169 bytes (61 KB)
+"
+"2","downloaded 61 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/munsell_0.5.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 244162 bytes (238 KB)
+"
+"2","downloaded 238 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/RColorBrewer_1.1-3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 54471 bytes (53 KB)
+"
+"2","downloaded 53 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/viridisLite_0.4.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1300830 bytes (1.2 MB)
+"
+"2","downloaded 1.2 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/rappdirs_0.3.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 52566 bytes (51 KB)
+"
+"2","downloaded 51 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/rematch_2.0.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 19277 bytes (18 KB)
+"
+"2","downloaded 18 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/askpass_1.2.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 74676 bytes (72 KB)
+"
+"2","downloaded 72 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/bit64_4.0.5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 504664 bytes (492 KB)
+"
+"2","downloaded 492 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/prettyunits_1.2.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 155311 bytes (151 KB)
+"
+"2","downloaded 151 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/processx_3.8.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 688738 bytes (672 KB)
+"
+"2","downloaded 672 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/evaluate_0.24.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 87036 bytes (84 KB)
+"
+"2","downloaded 84 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/highr_0.11.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 44214 bytes (43 KB)
+"
+"2","downloaded 43 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/xfun_0.46.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 538110 bytes (525 KB)
+"
+"2","downloaded 525 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/yaml_2.3.10.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 119450 bytes (116 KB)
+"
+"2","downloaded 116 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/bslib_0.8.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 5594589 bytes (5.3 MB)
+"
+"2","downloaded 5.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/fontawesome_0.5.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1351152 bytes (1.3 MB)
+"
+"2","downloaded 1.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/htmltools_0.5.8.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 363175 bytes (354 KB)
+"
+"2","downloaded 354 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/jquerylib_0.1.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 526071 bytes (513 KB)
+"
+"2","downloaded 513 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/tinytex_0.52.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 143217 bytes (139 KB)
+"
+"2","downloaded 139 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/backports_1.5.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 122682 bytes (119 KB)
+"
+"2","downloaded 119 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/generics_0.1.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 83342 bytes (81 KB)
+"
+"2","downloaded 81 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/glue_1.7.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 163516 bytes (159 KB)
+"
+"2","downloaded 159 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/lifecycle_1.0.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 141047 bytes (137 KB)
+"
+"2","downloaded 137 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/memoise_2.0.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 51156 bytes (49 KB)
+"
+"2","downloaded 49 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/blob_1.2.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 49773 bytes (48 KB)
+"
+"2","downloaded 48 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/DBI_1.2.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 938031 bytes (916 KB)
+"
+"2","downloaded 916 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/R6_2.5.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 85007 bytes (83 KB)
+"
+"2","downloaded 83 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/tidyselect_1.2.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 228250 bytes (222 KB)
+"
+"2","downloaded 222 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/vctrs_0.6.5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1360958 bytes (1.3 MB)
+"
+"2","downloaded 1.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/withr_3.0.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 230867 bytes (225 KB)
+"
+"2","downloaded 225 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/data.table_1.15.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 2416893 bytes (2.3 MB)
+"
+"2","downloaded 2.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/gtable_0.3.5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 227165 bytes (221 KB)
+"
+"2","downloaded 221 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/isoband_0.2.7.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1929115 bytes (1.8 MB)
+"
+"2","downloaded 1.8 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/scales_1.3.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 715000 bytes (698 KB)
+"
+"2","downloaded 698 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/gargle_1.5.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 804828 bytes (785 KB)
+"
+"2","downloaded 785 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/uuid_1.2-1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 52935 bytes (51 KB)
+"
+"2","downloaded 51 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/cellranger_1.1.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 106542 bytes (104 KB)
+"
+"2","downloaded 104 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/curl_5.2.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 3219552 bytes (3.1 MB)
+"
+"2","downloaded 3.1 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/ids_1.0.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 126255 bytes (123 KB)
+"
+"2","downloaded 123 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/rematch2_2.1.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 48682 bytes (47 KB)
+"
+"2","downloaded 47 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/cpp11_0.4.7.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 304569 bytes (297 KB)
+"
+"2","downloaded 297 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/pkgconfig_2.0.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 22827 bytes (22 KB)
+"
+"2","downloaded 22 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/mime_0.12.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 40893 bytes (39 KB)
+"
+"2","downloaded 39 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/openssl_2.2.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 3398930 bytes (3.2 MB)
+"
+"2","downloaded 3.2 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/timechange_0.3.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 514554 bytes (502 KB)
+"
+"2","downloaded 502 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/fansi_1.0.6.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 323451 bytes (315 KB)
+"
+"2","downloaded 315 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/utf8_1.2.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 150988 bytes (147 KB)
+"
+"2","downloaded 147 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/systemfonts_1.1.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1342750 bytes (1.3 MB)
+"
+"2","downloaded 1.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/textshaping_0.4.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1213218 bytes (1.2 MB)
+"
+"2","downloaded 1.2 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/clipr_0.8.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 55519 bytes (54 KB)
+"
+"2","downloaded 54 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/crayon_1.5.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 165502 bytes (161 KB)
+"
+"2","downloaded 161 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/vroom_1.6.5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1339363 bytes (1.3 MB)
+"
+"2","downloaded 1.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/tzdb_0.4.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1016535 bytes (992 KB)
+"
+"2","downloaded 992 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/progress_1.2.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 88589 bytes (86 KB)
+"
+"2","downloaded 86 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/callr_3.7.6.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 475670 bytes (464 KB)
+"
+"2","downloaded 464 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/fs_1.6.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 412943 bytes (403 KB)
+"
+"2","downloaded 403 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/knitr_1.48.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1207784 bytes (1.2 MB)
+"
+"2","downloaded 1.2 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/rmarkdown_2.27.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 2694395 bytes (2.6 MB)
+"
+"2","downloaded 2.6 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/selectr_0.4-2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 486450 bytes (475 KB)
+"
+"2","downloaded 475 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/stringi_1.8.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 15027635 bytes (14.3 MB)
+"
+"2","downloaded 14.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/broom_1.0.6.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1926337 bytes (1.8 MB)
+"
+"2","downloaded 1.8 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/conflicted_1.2.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 57527 bytes (56 KB)
+"
+"2","downloaded 56 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/cli_3.6.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1361839 bytes (1.3 MB)
+"
+"2","downloaded 1.3 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/dbplyr_2.5.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1262030 bytes (1.2 MB)
+"
+"2","downloaded 1.2 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/dplyr_1.1.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1583321 bytes (1.5 MB)
+"
+"2","downloaded 1.5 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/dtplyr_1.3.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 358130 bytes (349 KB)
+"
+"2","downloaded 349 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/forcats_1.0.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 427490 bytes (417 KB)
+"
+"2","downloaded 417 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/ggplot2_3.5.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 5011149 bytes (4.8 MB)
+"
+"2","downloaded 4.8 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/googledrive_2.1.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1907811 bytes (1.8 MB)
+"
+"2","downloaded 1.8 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/googlesheets4_1.1.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 523338 bytes (511 KB)
+"
+"2","downloaded 511 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/haven_2.5.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 768625 bytes (750 KB)
+"
+"2","downloaded 750 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/hms_1.1.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 105599 bytes (103 KB)
+"
+"2","downloaded 103 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/httr_1.4.7.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 495535 bytes (483 KB)
+"
+"2","downloaded 483 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/jsonlite_1.8.8.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1107194 bytes (1.1 MB)
+"
+"2","downloaded 1.1 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/lubridate_1.9.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 987164 bytes (964 KB)
+"
+"2","downloaded 964 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/magrittr_2.0.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 229422 bytes (224 KB)
+"
+"2","downloaded 224 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/modelr_0.1.11.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 202777 bytes (198 KB)
+"
+"2","downloaded 198 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/pillar_1.9.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 663048 bytes (647 KB)
+"
+"2","downloaded 647 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/purrr_1.0.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 510103 bytes (498 KB)
+"
+"2","downloaded 498 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/ragg_1.3.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1966409 bytes (1.9 MB)
+"
+"2","downloaded 1.9 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/readr_2.1.5.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1191750 bytes (1.1 MB)
+"
+"2","downloaded 1.1 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/readxl_1.4.3.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1202473 bytes (1.1 MB)
+"
+"2","downloaded 1.1 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/reprex_2.1.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 504931 bytes (493 KB)
+"
+"2","downloaded 493 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/rlang_1.1.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1622822 bytes (1.5 MB)
+"
+"2","downloaded 1.5 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/rstudioapi_0.16.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 338646 bytes (330 KB)
+"
+"2","downloaded 330 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/rvest_1.0.4.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 308534 bytes (301 KB)
+"
+"2","downloaded 301 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/stringr_1.5.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 324098 bytes (316 KB)
+"
+"2","downloaded 316 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/tibble_3.2.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 695404 bytes (679 KB)
+"
+"2","downloaded 679 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/tidyr_1.3.1.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1266914 bytes (1.2 MB)
+"
+"2","downloaded 1.2 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/xml2_1.3.6.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 1613735 bytes (1.5 MB)
+"
+"2","downloaded 1.5 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/tidyverse_2.0.0.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 431342 bytes (421 KB)
+"
+"2","downloaded 421 KB
+
+"
+"1","package ‘fastmap’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘colorspace’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘sys’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘bit’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘ps’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘base64enc’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘sass’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘digest’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘cachem’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘farver’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘labeling’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘munsell’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘RColorBrewer’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘viridisLite’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rappdirs’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rematch’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘askpass’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘bit64’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘prettyunits’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘processx’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘evaluate’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘highr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘xfun’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘yaml’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘bslib’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘fontawesome’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘htmltools’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘jquerylib’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘tinytex’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘backports’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘generics’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘glue’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘lifecycle’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘memoise’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘blob’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘DBI’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘R6’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘tidyselect’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘vctrs’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘withr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘data.table’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘gtable’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘isoband’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘scales’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘gargle’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘uuid’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘cellranger’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘curl’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘ids’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rematch2’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘cpp11’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘pkgconfig’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘mime’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘openssl’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘timechange’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘fansi’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘utf8’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘systemfonts’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘textshaping’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘clipr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘crayon’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘vroom’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘tzdb’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘progress’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘callr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘fs’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘knitr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rmarkdown’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘selectr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘stringi’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘broom’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘conflicted’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘cli’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘dbplyr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘dplyr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘dtplyr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘forcats’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘ggplot2’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘googledrive’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘googlesheets4’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘haven’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘hms’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘httr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘jsonlite’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘lubridate’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘magrittr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘modelr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘pillar’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘purrr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘ragg’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘readr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘readxl’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘reprex’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rlang’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rstudioapi’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘rvest’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘stringr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘tibble’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘tidyr’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘xml2’ successfully unpacked and MD5 sums checked
+"
+"1","package ‘tidyverse’ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\amrit\AppData\Local\Temp\Rtmp4wFgBt\downloaded_packages"
+"1",""
+"1","
+"
+"0","library(tidyverse)"
+"1","── [1mAttaching core tidyverse packages[22m ────────────────────────────────────────── tidyverse 2.0.0 ──
+[32m✔[39m [34mdplyr    [39m 1.1.4     [32m✔[39m [34mreadr    [39m 2.1.5
+[32m✔[39m [34mforcats  [39m 1.0.0     [32m✔[39m [34mstringr  [39m 1.5.1
+[32m✔[39m [34mggplot2  [39m 3.5.1     [32m✔[39m [34mtibble   [39m 3.2.1
+[32m✔[39m [34mlubridate[39m 1.9.3     [32m✔[39m [34mtidyr    [39m 1.3.1
+[32m✔[39m [34mpurrr    [39m 1.0.2     
+"
+"1","── [1mConflicts[22m ──────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+[31m✖[39m [34mdplyr[39m::[32mfilter()[39m masks [34mstats[39m::filter()
+[31m✖[39m [34mdplyr[39m::[32mlag()[39m    masks [34mstats[39m::lag()
+[36mℹ[39m Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors
+"
