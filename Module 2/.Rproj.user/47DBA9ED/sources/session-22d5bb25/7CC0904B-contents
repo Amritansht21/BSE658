@@ -42,7 +42,7 @@ sum(is.na(covid_testdata$Negative))
 Tidyverse package contains a list of packages useful for working with data.
 
 ```{r}
-install.packages("tidyverse")
+#install.packages("tidyverse")
 library(tidyverse)
 ```
 
