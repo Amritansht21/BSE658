@@ -1,0 +1,187 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+ASSIGNMENT 2 : DATA WRANGLING 
+```{r}
+library(tidyverse)
+library(dplyr)
+library(tibble)
+library(ggplot2)
+```
+loading the data 
+
+```{r}
+data("msleep")
+head(msleep)
+```
+```{r}
+# converting the data to tibble
+sleep_data <- as_tibble(msleep)
+sleep_data
+```
+filtering out data to relevant coloumns 
+
+```{r}
+select(sleep_data, -c( genus, order))
+sleep <- select(sleep_data, -c( genus, order))
+```
+
+
+```{r}
+sleep <- mutate(sleep , prop = ((brainwt/bodywt)*100))
+sleep
+```
+```{r}
+sleep <- arrange(sleep, sleep_total)
+
+```
+
+
+
+
+
+
+
+ASKING QUESTIONS :
+
+
+
+
+
+
+
+Q1.Does diet affect sleep time ?
+
+```{r}
+ggplot(sleep, aes(x = vore , y = sleep_total , color = vore, alpha = 0.2)) + geom_point() + geom_boxplot()
+```
+We can see that insectivores have a higer total sleep than carnivore, herbivore or omnivore , who seem to have nearly similar average sleep.
+```{r}
+ggplot( data = sleep , aes(x= sleep_total))  + geom_histogram( bins = 16) + facet_wrap(~vore , nrow = 2)
+```
+
+
+
+
+
+
+
+we see that in carnivores there is nearly even distribution of total sleep hours, while the omnivores seem to be all close by in a single peak and herbivores with two distinct peaks. 
+
+
+
+
+
+
+
+
+
+
+
+Q2. what is the effect of Body wt. on sleep 
+
+```{r}
+# sleep plotted against weight, the clusters were magnified by limiting a maximum body weight.
+ggplot( sleep , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 2000) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 200) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 100) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 50) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 25) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 10) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 2.5) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+ggplot( filter(sleep,bodywt < 0.5) , aes(x = bodywt, y = sleep_total, color = vore)) + geom_point()
+```
+
+
+
+
+
+
+I plotted dot plots based on total sleep vs body wt. and diet. We can clearly see that animals with lower body weight sleep more. this could also explain the higher average sleep in insectivores in prvious study as all insectivore were redents of small body weight and thus slept more.
+
+this cal also be seen in the head and tail of sleep, the heaviest sleepers are the lighest animals !!
+
+
+
+
+
+
+
+```{r}
+head(select(sleep, name, sleep_total, bodywt ))
+tail(select(sleep, name, sleep_total, bodywt ))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+Q3. Does conservation have any effect on sleep duration 
+```{r}
+ggplot(sleep, aes(x = conservation , y = sleep_total , color = vore , alpha = 0.6)) + geom_point() + geom_boxplot()
+```
+```{r}
+ggplot( sleep , aes(x = vore, y = sleep_total, color = conservation)) + geom_point()
+```
+
+
+
+
+
+
+
+
+
+
+We can cleraly see that across all diet types, the sleep time of Least concerned (lc) and Non-threathened (nc) type animals is higher as compared to Critically endangered (cd), Endangered (en) and Vulnerable(vu) type animals. 
+
+there could be many reasons as to why we see this factor: my hypothesis is their environment of constant danger due to being less in number forced them to be more alert. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

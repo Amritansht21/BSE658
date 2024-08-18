@@ -1,0 +1,422 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+ASSIGNMENT 2 : DATA WRANGLING
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+## v dplyr     1.1.4     v readr     2.1.5
+## v forcats   1.0.0     v stringr   1.5.1
+## v ggplot2   3.5.1     v tibble    3.2.1
+## v lubridate 1.9.3     v tidyr     1.3.1
+## v purrr     1.0.2     
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(tibble)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\end{Highlighting}
+\end{Shaded}
+
+loading the data
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{data}\NormalTok{(}\StringTok{"msleep"}\NormalTok{)}
+\FunctionTok{head}\NormalTok{(msleep)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 11
+##   name    genus vore  order conservation sleep_total sleep_rem sleep_cycle awake
+##   <chr>   <chr> <chr> <chr> <chr>              <dbl>     <dbl>       <dbl> <dbl>
+## 1 Cheetah Acin~ carni Carn~ lc                  12.1      NA        NA      11.9
+## 2 Owl mo~ Aotus omni  Prim~ <NA>                17         1.8      NA       7  
+## 3 Mounta~ Aplo~ herbi Rode~ nt                  14.4       2.4      NA       9.6
+## 4 Greate~ Blar~ omni  Sori~ lc                  14.9       2.3       0.133   9.1
+## 5 Cow     Bos   herbi Arti~ domesticated         4         0.7       0.667  20  
+## 6 Three-~ Brad~ herbi Pilo~ <NA>                14.4       2.2       0.767   9.6
+## # i 2 more variables: brainwt <dbl>, bodywt <dbl>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# converting the data to tibble}
+\NormalTok{sleep\_data }\OtherTok{\textless{}{-}} \FunctionTok{as\_tibble}\NormalTok{(msleep)}
+\NormalTok{sleep\_data}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 83 x 11
+##    name   genus vore  order conservation sleep_total sleep_rem sleep_cycle awake
+##    <chr>  <chr> <chr> <chr> <chr>              <dbl>     <dbl>       <dbl> <dbl>
+##  1 Cheet~ Acin~ carni Carn~ lc                  12.1      NA        NA      11.9
+##  2 Owl m~ Aotus omni  Prim~ <NA>                17         1.8      NA       7  
+##  3 Mount~ Aplo~ herbi Rode~ nt                  14.4       2.4      NA       9.6
+##  4 Great~ Blar~ omni  Sori~ lc                  14.9       2.3       0.133   9.1
+##  5 Cow    Bos   herbi Arti~ domesticated         4         0.7       0.667  20  
+##  6 Three~ Brad~ herbi Pilo~ <NA>                14.4       2.2       0.767   9.6
+##  7 North~ Call~ carni Carn~ vu                   8.7       1.4       0.383  15.3
+##  8 Vespe~ Calo~ <NA>  Rode~ <NA>                 7        NA        NA      17  
+##  9 Dog    Canis carni Carn~ domesticated        10.1       2.9       0.333  13.9
+## 10 Roe d~ Capr~ herbi Arti~ lc                   3        NA        NA      21  
+## # i 73 more rows
+## # i 2 more variables: brainwt <dbl>, bodywt <dbl>
+\end{verbatim}
+
+filtering out data to relevant coloumns
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{select}\NormalTok{(sleep\_data, }\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{( genus, order))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 83 x 9
+##    name      vore  conservation sleep_total sleep_rem sleep_cycle awake  brainwt
+##    <chr>     <chr> <chr>              <dbl>     <dbl>       <dbl> <dbl>    <dbl>
+##  1 Cheetah   carni lc                  12.1      NA        NA      11.9 NA      
+##  2 Owl monk~ omni  <NA>                17         1.8      NA       7    0.0155 
+##  3 Mountain~ herbi nt                  14.4       2.4      NA       9.6 NA      
+##  4 Greater ~ omni  lc                  14.9       2.3       0.133   9.1  0.00029
+##  5 Cow       herbi domesticated         4         0.7       0.667  20    0.423  
+##  6 Three-to~ herbi <NA>                14.4       2.2       0.767   9.6 NA      
+##  7 Northern~ carni vu                   8.7       1.4       0.383  15.3 NA      
+##  8 Vesper m~ <NA>  <NA>                 7        NA        NA      17   NA      
+##  9 Dog       carni domesticated        10.1       2.9       0.333  13.9  0.07   
+## 10 Roe deer  herbi lc                   3        NA        NA      21    0.0982 
+## # i 73 more rows
+## # i 1 more variable: bodywt <dbl>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sleep }\OtherTok{\textless{}{-}} \FunctionTok{select}\NormalTok{(sleep\_data, }\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{( genus, order))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sleep }\OtherTok{\textless{}{-}} \FunctionTok{mutate}\NormalTok{(sleep , }\AttributeTok{prop =}\NormalTok{ ((brainwt}\SpecialCharTok{/}\NormalTok{bodywt)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{))}
+\NormalTok{sleep}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 83 x 10
+##    name      vore  conservation sleep_total sleep_rem sleep_cycle awake  brainwt
+##    <chr>     <chr> <chr>              <dbl>     <dbl>       <dbl> <dbl>    <dbl>
+##  1 Cheetah   carni lc                  12.1      NA        NA      11.9 NA      
+##  2 Owl monk~ omni  <NA>                17         1.8      NA       7    0.0155 
+##  3 Mountain~ herbi nt                  14.4       2.4      NA       9.6 NA      
+##  4 Greater ~ omni  lc                  14.9       2.3       0.133   9.1  0.00029
+##  5 Cow       herbi domesticated         4         0.7       0.667  20    0.423  
+##  6 Three-to~ herbi <NA>                14.4       2.2       0.767   9.6 NA      
+##  7 Northern~ carni vu                   8.7       1.4       0.383  15.3 NA      
+##  8 Vesper m~ <NA>  <NA>                 7        NA        NA      17   NA      
+##  9 Dog       carni domesticated        10.1       2.9       0.333  13.9  0.07   
+## 10 Roe deer  herbi lc                   3        NA        NA      21    0.0982 
+## # i 73 more rows
+## # i 2 more variables: bodywt <dbl>, prop <dbl>
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sleep }\OtherTok{\textless{}{-}} \FunctionTok{arrange}\NormalTok{(sleep, sleep\_total)}
+\end{Highlighting}
+\end{Shaded}
+
+ASKING QUESTIONS :
+
+Q1.Does diet affect sleep time ?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(sleep, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ vore , }\AttributeTok{y =}\NormalTok{ sleep\_total , }\AttributeTok{color =}\NormalTok{ vore, }\AttributeTok{alpha =} \FloatTok{0.2}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+} \FunctionTok{geom\_boxplot}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-7-1.pdf}
+We can see that insectivores have a higer total sleep than carnivore,
+herbivore or omnivore , who seem to have nearly similar average sleep.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data =}\NormalTok{ sleep , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{ sleep\_total))  }\SpecialCharTok{+} \FunctionTok{geom\_histogram}\NormalTok{( }\AttributeTok{bins =} \DecValTok{16}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{vore , }\AttributeTok{nrow =} \DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-8-1.pdf}
+we see that in carnivores there is nearly even distribution of total
+sleep hours, while the omnivores seem to be all close by in a single
+peak and herbivores with two distinct peaks.
+
+Q2. what is the effect of Body wt. on sleep
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# sleep plotted against weight, the clusters were magnified by limiting a maximum body weight.}
+\FunctionTok{ggplot}\NormalTok{( sleep , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \DecValTok{2000}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \DecValTok{200}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \DecValTok{100}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-4.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \DecValTok{50}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \DecValTok{25}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-6.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \DecValTok{10}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-7.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \FloatTok{2.5}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-8.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( }\FunctionTok{filter}\NormalTok{(sleep,bodywt }\SpecialCharTok{\textless{}} \FloatTok{0.5}\NormalTok{) , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ bodywt, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ vore)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-9-9.pdf}
+I plotted dot plots based on total sleep vs body wt. and dies. We can
+clearly see that animals with lower body weight sleep more. this could
+also explain the higher average sleep in insectivores in prvious study
+as all insectivore were redents of small body weight and thus slept
+more.
+
+this cal also be seen in the head and tail of sleep, the heaviest
+sleepers are the lighest animals !!
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(}\FunctionTok{select}\NormalTok{(sleep, name, sleep\_total, bodywt ))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 3
+##   name             sleep_total bodywt
+##   <chr>                  <dbl>  <dbl>
+## 1 Giraffe                  1.9  900. 
+## 2 Pilot whale              2.7  800  
+## 3 Horse                    2.9  521  
+## 4 Roe deer                 3     14.8
+## 5 Donkey                   3.1  187  
+## 6 African elephant         3.3 6654
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{tail}\NormalTok{(}\FunctionTok{select}\NormalTok{(sleep, name, sleep\_total, bodywt ))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 6 x 3
+##   name                   sleep_total bodywt
+##   <chr>                        <dbl>  <dbl>
+## 1 Long-nosed armadillo          17.4  3.5  
+## 2 North American Opossum        18    1.7  
+## 3 Giant armadillo               18.1 60    
+## 4 Thick-tailed opposum          19.4  0.37 
+## 5 Big brown bat                 19.7  0.023
+## 6 Little brown bat              19.9  0.01
+\end{verbatim}
+
+Q3. Does conservation have any effect on sleep duration
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(sleep, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ conservation , }\AttributeTok{y =}\NormalTok{ sleep\_total , }\AttributeTok{color =}\NormalTok{ vore , }\AttributeTok{alpha =} \FloatTok{0.6}\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+} \FunctionTok{geom\_boxplot}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{( sleep , }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ vore, }\AttributeTok{y =}\NormalTok{ sleep\_total, }\AttributeTok{color =}\NormalTok{ conservation)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Assignment-2---animal-sleep-data--_files/figure-latex/unnamed-chunk-12-1.pdf}
+We can cleraly see that across all diet types, the sleep time of Least
+concerned (lc) and Non-threathened (nc) type animals is higher as
+compared to Critically endangered (cd), Endangered (en) and
+Vulnerable(vu) type animals.
+
+there could be many reasons as to why we see this factor: my hypothesis
+is their environment of constant danger due to being less in number
+forced them to be more alert.
+
+\end{document}

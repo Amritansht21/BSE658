@@ -1,0 +1,3 @@
+"0","# converting the data to tibble"
+"0","sleep_data <- as_tibble(msleep)"
+"0","sleep_data"

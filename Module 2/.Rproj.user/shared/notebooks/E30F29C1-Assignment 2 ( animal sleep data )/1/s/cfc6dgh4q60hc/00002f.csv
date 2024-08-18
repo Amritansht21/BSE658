@@ -1,0 +1,1 @@
+"0","ggplot( data = sleep , aes(x= sleep_total))  + geom_histogram( bins = 16) + facet_wrap(~vore , nrow = 2)"
