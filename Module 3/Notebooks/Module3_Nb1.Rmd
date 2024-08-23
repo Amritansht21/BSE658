@@ -5,6 +5,7 @@ output: html_notebook
 ```{r}
 #Initial packages
 install.packages("lsr")
+
 ```
 
 In this notebook, we'll take a look at how to explore a dataset.
@@ -34,10 +35,10 @@ That's a lot of theory, let's dive into some data now.
 
 ```{r}
 #Change the path according to your PC
-path = "/Users/lenovo1/Desktop/mtech/courses/stats/Datasets/data/"
+path = "C:/Users/amrit/Downloads/SEMESTER 7/BSE658 STATISTICS FOR MODERN BIOLOGY/BSE658/Module 3/Notebooks/aflsmall.Rdata"
 fileN ="aflsmall.Rdata"
 file_path = paste(path,fileN, sep = "")
-load(file_path)
+load("aflsmall.Rdata")
 library(lsr)
 who()
 ```
@@ -59,6 +60,14 @@ Let's try to plot it.
 ```{r}
 hist (afl.margins)
 ```
+```{r}
+
+```
+
+
+
+
+
 
 As you can see, different margins in a sample will have different measurements. We can see this variability with a **frequency distribution**. The frequency of a specific measurement in a sample is the number of observations having a particular value of the measurement. The frequency distribution shows how often each value of the variable occurs in the sample. 
 
@@ -74,7 +83,9 @@ Try finding the skewness for the above data for afl.margins using skew() functio
 
 ```{r}
 library(psych)
+skew(afl.margins)
 #Try finding skewness of afl.margins here
+#skewnwss is just, making it cube power in variance function. scaling it down and then taking mean
 ```
 
 Although such a graphical representation gives a 'gist' of the data but it is useful to find some "summary" statistics as well.
@@ -89,6 +100,12 @@ As you've already seen in previous classes, the mean of a set of observations is
 Try finding the mean for the first 5 values from afl.margins and then for all the values of afl.margins
 ```{r}
 #Don't forget to uncomment the following before running
+mean(afl.margins)
+array <- c(12,56,45,56,89,69)
+num_mean <- (sum(array)/length(array))
+mean(array)
+array <- sort(array)
+meadian <- median(array)
 #afl.mean5 = 
 #afl.mean = 
 #afl.mean5
@@ -105,8 +122,7 @@ Probably you mentally arranged these numbers in ascending order first and then f
 Now try finding out the median for afl.margins.
 
 ```{r}
-#afl.median = 
-#afl.median
+afl.median <- median(afl.margins)
 ```
 
 **Difference between Mean and Median**
@@ -143,6 +159,7 @@ Let's try trimming the mean for above data.
 
 ```{r}
 dataset <- c(-15,2,3,4,5,6,7,8,9,12)
+mean(dataset)
 mean(x = dataset, trim = .1)
 #Try calculating 5% trimmed mean for above dataset
 ```
@@ -170,6 +187,7 @@ The range of a variable is very simple: it’s the biggest value minus the small
 
 ```{r}
 #Find range of afl.margins here
+range(afl.margins)
 ```
 
 But what about the earlier data we saw, ` -100,2,3,4,5,6,7,8,9,10`. Without removing the outlier, we'll get a range of 110 but without the outlier, we'll get a range of only 8.
@@ -179,7 +197,10 @@ That is why there is something called the interquartile range (IQR) which is lik
 
 Try finding out 25%, 75% and 50% quantiles for afl.margins and also the Inter-quartile range.
 ```{r}
-#Use the functions quantile(x = afl.margins, prob = 0.2) for 20% quantile and IQR() 
+#Use the functions 
+quantile(x = afl.margins, prob = c(0.25,0.75)) 
+IQR(afl.margins)
+#for 20% quantile and IQR() 
 ```
 
 IQR can simply be thought as the range spanned by the “middle half” of the data.
@@ -192,6 +213,7 @@ Try finding out the variance using `var()`.
 
 ```{r}
 #Use var() for finding variance of afl.margins
+var(afl.margins)
 ```
 
 _Read more about var() function and absolute vs squared deviations in Section 5.2.4 from Learning Statistics with R by D. Navarro_
@@ -204,6 +226,7 @@ Try to find out the standard deviation of afl.margins.
 
 ```{r}
 #Find out Std dev. here
+sd(afl.margins)
 ```
 
 ##### Quick cheat sheet: When to use what?
@@ -230,7 +253,10 @@ Now that we've learnt about the different methods of describing a data, it would
 There's indeed a function called `summary()` in R.
 
 ```{r}
-#Check out what summary() does for afl.margins
+#Check out what summary() does for afl.margins<
+summary(afl.margins)
+blowouts <- afl.margins>50
+summary(blowouts)
 ```
 
 Pretty cool, no?
@@ -249,10 +275,18 @@ The `psych` package also has a function called `describe()` for dataframes. Don'
 In fact, you can also describe these statistics group wise. 
 
 For instance, run `describeBy( x=clin.trial, group=clin.trial$therapy )`
+```{r}
+summary(clin.trial)
+```
 
+
+```{r}
+describe(clin.trial)
+```
 ```{r}
 describeBy( x=clin.trial, group=clin.trial$therapy )
 ```
+
 Notice that, the output displays asterisks for factor variables, in order to draw your attention to the fact that the descriptive statistics that it has calculated won’t be very meaningful for those variables.
 
 Another more general command for grouping is `by()` 
@@ -264,12 +298,14 @@ by(data=clin.trial, INDICES=clin.trial$therapy, FUN=describe)
 #Also try replacing describe in FUN above with summary
 ```
 
+```{r}
+by(data=clin.trial, INDICES=clin.trial$therapy, FUN=summary)
+#Also try replacing describe in FUN above with summary
+```
 What if you have multiple grouping variables? Suppose, for example, you would like to look at the average mood gain separately for all possible combinations of drug and therapy.We can use `aggregate()` command.
 
 ```{r}
-aggregate( formula = mood.gain ~ drug + therapy, 
-           data = clin.trial,
-           FUN = mean) 
+aggregate( x = mood.gain ~ drug + therapy, data = clin.trial, FUN = mean) 
 #1 mood.gain by drug/therapy combination
 #2 data is in the clin.trial data frame
 #3 print out group means
